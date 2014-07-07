@@ -1,0 +1,24 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Live Music Cambridge, MA</h1>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Events:</h1>
+      <ul class="nav nav-tabs nav-stacked col-lg-6" ng-repeat="event in mideastEvents">
+        <li><a href="#" tooltip="{{event.info}}">{{event.name}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p><a href="https://jeremyssutton.com">Created by Jeremy Sutton</a> |
+  </div>
+</footer>
